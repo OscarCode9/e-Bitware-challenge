@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-app-bitware
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-app-bitware
+  template:
+    metadata:
+      labels:
+        app: springboot-app-bitware
+    spec:
+      containers:
+        - name: springboot-app-bitware
+          image: oscarcode/springboot-app-bitware
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:postgresql://postgres:5432/postgres
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-config
+                  key: POSTGRES_USER
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD

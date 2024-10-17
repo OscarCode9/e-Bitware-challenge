@@ -1,0 +1,11 @@
+user_id,first_name,last_name,email,username,age,signup_date,is_active
+1,Oscar,Martínez,oscar.martinez@example.com,omartinez,30,2024-01-15,true
+2,Ana,Santos,ana.santos@example.com,asantos,28,2023-11-22,true
+3,John,Doe,john.doe@example.com,jdoe,35,2024-03-03,false
+4,Maria,Gomez,maria.gomez@example.com,mgomez,26,2023-10-05,true
+5,Carlos,Ramirez,carlos.ramirez@example.com,cramirez,40,2024-02-20,true
+6,Lucia,Lopez,lucia.lopez@example.com,llopez,31,2024-01-10,false
+7,Juan,Perez,juan.perez@example.com,jperez,22,2023-12-12,true
+8,Sara,Garcia,sara.garcia@example.com,sara_garcia,29,2024-04-05,true
+9,David,Hernandez,david.hernandez@example.com,dhernandez,37,2023-11-18,true
+10,Laura,Fernandez,laura.fernandez@example.com,lfernandez,33,2024-01-25,false
